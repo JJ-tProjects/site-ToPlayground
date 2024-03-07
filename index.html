@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alterar Cor de Fundo</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #btnCinza {
+        background-color: lightgray;
+        padding: 10px 20px;
+        margin-right: 10px;
+        border: none;
+        cursor: pointer;
+    }
+    #btnCinzaEscuro {
+        background-color: darkgray;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <button id="btnCinza" class="btn">Cinza</button>
+    <button id="btnCinzaEscuro" class="btn">Cinza Escuro</button>
+
+    <script>
+        document.getElementById("btnCinza").addEventListener("click", function() {
+            document.body.style.backgroundColor = "lightgray";
+        });
+
+        document.getElementById("btnCinzaEscuro").addEventListener("click", function() {
+            document.body.style.backgroundColor = "darkgray";
+        });
+    </script>
+</body>
+</html>
