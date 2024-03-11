@@ -3,43 +3,73 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alterar Cor de Fundo</title>
+<title>Index</title>
 <style>
     body {
+        font-family: Segoe UI, Arial, sans-serif;
+        background-color: #f0f0f0;
         margin: 0;
         padding: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
-    #btnCinza {
-        background-color: lightgray;
-        padding: 10px 20px;
-        margin-right: 10px;
-        border: none;
-        cursor: pointer;
+
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+        color: #333;
     }
-    #btnCinzaEscuro {
-        background-color: darkgray;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
+
+    p {
+        text-align: center;
+        color: #666;
+    }
+
+    table {
+        width: 60%;
+        margin: 30px auto;
+        border-collapse: collapse;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+        padding: 15px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #2196F3;
+        color: #fff;
+    }
+
+    td {
+        border-bottom: 1px solid #ddd;
+    }
+
+    a {
+        color: #2196F3;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 </style>
 </head>
 <body>
-    <button id="btnCinza" class="btn">Cinza</button>
-    <button id="btnCinzaEscuro" class="btn">Cinza Escuro</button>
-
-    <script>
-        document.getElementById("btnCinza").addEventListener("click", function() {
-            document.body.style.backgroundColor = "lightgray";
-        });
-
-        document.getElementById("btnCinzaEscuro").addEventListener("click", function() {
-            document.body.style.backgroundColor = "darkgray";
-        });
-    </script>
+    <h1>Home</h1>
+    <p>O objetivo deste site é criar páginas com componentes de diferentes complexidades para manipulação através de testes automatizados.</p>
+    <table>
+        <caption>Páginas de Exemplo</caption>
+        <tr>
+            <th>Página</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><a href="../pages/twoButtons.html">Two Buttons</a></td>
+            <td>Alterar cor de fundo utilizando dois botões.</td>
+        </tr>
+        <!-- Adicione mais linhas conforme necessário para mais páginas -->
+    </table>
 </body>
 </html>
