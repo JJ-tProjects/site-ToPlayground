@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dropdown</title>
+<title>Título</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <style>
@@ -61,27 +61,7 @@
 <body>
     <a href="../index.html" class="home-button"><i class="fas fa-home"></i></a>
 
-    <h1>Selecione uma fruta:</h1>
+    <h1>Título</h1>
 
-    <div class="dropdown-container">
-        <select id="fruitsDropdown">
-            <option value="apple">Apple</option>
-            <option value="banana">Banana</option>
-            <option value="orange">Orange</option>
-        </select>
-    </div>
-
-    <script>
-        document.getElementById("fruitsDropdown").addEventListener("change", function() {
-            var selectedFruit = this.value;
-            if (selectedFruit === "apple") {
-                document.body.style.backgroundColor = "lightgreen";
-            } else if (selectedFruit === "banana") {
-                document.body.style.backgroundColor = "lightyellow";
-            } else if (selectedFruit === "orange") {
-                document.body.style.backgroundColor = "lightsalmon";
-            }
-        });
-    </script>
 </body>
 </html>
